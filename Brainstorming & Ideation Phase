@@ -1,0 +1,18 @@
+Project Title
+Implement Client Script and UI Policy in ServiceNow Incident
+
+## Objective
+To improve the Incident form by using Client Scripts and UI Policies.
+
+## Ideas
+- Automatically populate incident fields.
+- Make fields mandatory when required.
+- Show or hide fields based on conditions.
+- Make fields read-only when necessary.
+- Improve the user experience of the Incident form.
+
+## Proposed Solution
+Use ServiceNow Client Scripts and UI Policies to control the behaviour of Incident form fields dynamically.
+
+## Expected Outcome
+The Incident form should work according to the defined conditions and provide a simple and user-friendly interface.
