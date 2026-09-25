@@ -1,0 +1,44 @@
+# Project Name: Project Demonstration Phase
+
+## Project Title
+Implement Client Script & UI Policy - Incident
+
+## Project Demonstration
+
+The project demonstrates the implementation of Client Script
+and UI Policy in the ServiceNow Incident form.
+
+## Client Script Code
+
+```javascript
+function onLoad() {
+
+    // Make Short Description mandatory
+    g_form.setMandatory('short_description', true);
+
+    // Assignment fields are initially optional
+    g_form.setMandatory('assignment_group', false);
+    g_form.setMandatory('assigned_to', false);
+}
+
+function onChange(control, oldValue, newValue, isLoading) {
+
+    if (isLoading) {
+        return;
+    }
+
+    // Priority 1 - Critical
+    if (newValue == '1') {
+
+        g_form.setMandatory('assignment_group', true);
+        g_form.setMandatory('assigned_to', true);
+
+        g_form.setVisible('assignment_group', true);
+        g_form.setVisible('assigned_to', true);
+
+    } else {
+
+        g_form.setMandatory('assignment_group', false);
+        g_form.setMandatory('assigned_to', false);
+    }
+}
