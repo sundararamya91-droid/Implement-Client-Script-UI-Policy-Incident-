@@ -1,0 +1,47 @@
+# Project Name: Project Documentation Phase
+
+## Project Title
+Implement Client Script & UI Policy - Incident
+
+## Project Overview
+This project implements Client Script and UI Policy
+in the ServiceNow Incident Management system.
+
+## Objective
+The main objective is to improve the Incident form by
+making required fields mandatory and controlling
+form behaviour dynamically.
+
+## Technologies Used
+- ServiceNow
+- JavaScript
+- Client Script
+- UI Policy
+- Incident Table
+
+## Client Script
+The Client Script is used to control the Incident form
+dynamically based on user actions.
+
+## UI Policy
+The UI Policy is used to make fields mandatory,
+visible, or read-only based on specified conditions.
+
+## Functionality
+- Short Description is made mandatory.
+- When Priority is Critical, Assignment Group becomes mandatory.
+- When Priority is Critical, Assigned To becomes mandatory.
+- When Priority changes to another value, these fields become optional.
+
+## Testing
+The Client Script and UI Policy were tested on the
+ServiceNow Incident form.
+
+## Expected Result
+The Incident form should correctly apply mandatory
+conditions based on the selected Priority.
+
+## Conclusion
+The project successfully demonstrates the use of
+Client Script and UI Policy for Incident Management
+in ServiceNow.
