@@ -1,0 +1,19 @@
+ Project Design Phase
+
+## Project Title
+Implement Client Script and UI Policy for Incident Management in ServiceNow
+
+## Design
+The Incident form is designed using Client Scripts and UI Policies.
+
+## Client Script
+Client Scripts are used to validate fields and perform actions dynamically based on user input.
+
+## UI Policy
+UI Policies are used to make fields mandatory, read-only, visible, or hidden based on conditions.
+
+## Incident Fields
+Caller, Short Description, Description, Category, Subcategory, Impact, Urgency, Priority, Assignment Group, Assigned To, and State.
+
+## Expected Result
+The Incident form should work dynamically and provide a simple and user-friendly experience.
