@@ -1,0 +1,49 @@
+# Project Name: Project Planning Phase
+
+## Project Topic
+Implement Client Script & UI Policy - Incident
+
+## Objective
+To improve the Incident form in ServiceNow using Client Script
+and UI Policy.
+
+## Technologies Used
+- ServiceNow
+- JavaScript
+- Client Script
+- UI Policy
+- Incident Table
+
+## Project Description
+This project implements Client Script and UI Policy on the
+ServiceNow Incident form to control field visibility,
+mandatory fields and form behaviour.
+
+## Client Script
+
+```javascript
+function onLoad() {
+
+    g_form.setMandatory('short_description', true);
+
+    g_form.setMandatory('assignment_group', false);
+    g_form.setMandatory('assigned_to', false);
+}
+
+function onChange(control, oldValue, newValue, isLoading) {
+
+    if (isLoading) {
+        return;
+    }
+
+    if (newValue == '1') {
+
+        g_form.setMandatory('assignment_group', true);
+        g_form.setMandatory('assigned_to', true);
+
+    } else {
+
+        g_form.setMandatory('assignment_group', false);
+        g_form.setMandatory('assigned_to', false);
+    }
+}
