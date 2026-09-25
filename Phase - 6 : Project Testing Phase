@@ -1,0 +1,48 @@
+# Project Name: Project Testing Phase
+
+## Project Title
+Implement Client Script & UI Policy - Incident
+
+## Testing Objective
+To verify that the Client Script and UI Policy work correctly
+in the ServiceNow Incident form.
+
+## Test Case 1 - Short Description
+
+Test:
+Open the Incident form and leave Short Description empty.
+
+Expected Result:
+Short Description should be mandatory.
+
+## Test Case 2 - Critical Priority
+
+Test:
+Set Priority to Critical.
+
+Expected Result:
+Assignment Group and Assigned To should become mandatory.
+
+## Test Case 3 - Normal Priority
+
+Test:
+Change Priority from Critical to another priority.
+
+Expected Result:
+Assignment Group and Assigned To should become optional.
+
+## Test Case 4 - Form Validation
+
+Test:
+Enter all required Incident details and save the form.
+
+Expected Result:
+The Incident should be saved successfully.
+
+## Test Result
+All Client Script and UI Policy functions are tested
+and working as expected.
+
+## Conclusion
+The testing phase verifies that the Incident Management
+System performs the required functions correctly.
