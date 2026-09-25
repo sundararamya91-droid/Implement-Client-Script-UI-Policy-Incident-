@@ -1,0 +1,72 @@
+# Project Name: Project Development Phase
+
+## Project Title
+Implement Client Script & UI Policy - Incident
+
+## Objective
+To develop an Incident Management System in ServiceNow
+using Client Script and UI Policy.
+
+## Technologies Used
+- ServiceNow
+- JavaScript
+- Client Script
+- UI Policy
+- Incident Table
+
+## Client Script
+
+function onLoad() {
+
+    g_form.setMandatory('short_description', true);
+
+    g_form.setMandatory('assignment_group', false);
+    g_form.setMandatory('assigned_to', false);
+}
+
+function onChange(control, oldValue, newValue, isLoading) {
+
+    if (isLoading) {
+        return;
+    }
+
+    if (newValue == '1') {
+
+        g_form.setMandatory('assignment_group', true);
+        g_form.setMandatory('assigned_to', true);
+
+    } else {
+
+        g_form.setMandatory('assignment_group', false);
+        g_form.setMandatory('assigned_to', false);
+    }
+}
+
+## UI Policy
+
+Condition:
+Priority is Critical
+
+UI Policy Actions:
+- Assignment Group - Mandatory
+- Assigned To - Mandatory
+- Assignment Group - Visible
+- Assigned To - Visible
+
+## Expected Result
+
+When Priority is set to Critical, Assignment Group
+and Assigned To become mandatory.
+
+## Testing
+
+1. Open the Incident form.
+2. Enter the Short Description.
+3. Select Priority as Critical.
+4. Check Assignment Group and Assigned To.
+5. Save the Incident.
+
+## Conclusion
+
+The project uses ServiceNow Client Script and UI Policy
+to provide dynamic behaviour in the Incident form.
